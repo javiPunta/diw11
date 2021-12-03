@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: center;
+}
+li{
+    transition: transform 2s;
+}
+li:hover{
+    transform: scale(2);
+    width: 10vw;
+    display: block;
+}
+
+div{
+    position: fixed;
+    width: 10vmax;
+    height: 10vmax;
+    background-color:lightgreen;
+    border-radius: 50% 50%;
+}
+@keyframes mover{
+    from{left:0vw;}
+    to{left:calc(100vw - 10vmax);}
+
+}
+div{
+    animation: mover 3s linear 1s infinite alternate running;
+}
